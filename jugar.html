@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando Juego...</title>
+
+    <script src="https://cjrtnc.leaningtech.com/4.0/loader.js"></script>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #container {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script>
+window.onload = async function () {
+    try {
+
+        // CAMBIO AQUÍ: Se le pasa la versión de Java 11 explícitamente en la inicialización
+        await cheerpjInit({ version: "11" });
+
+        cheerpjCreateDisplay(
+            800,
+            600,
+            document.getElementById("container")
+        );
+
+        await cheerpjRunJar("/app/juego.jar");
+
+        console.log("Juego cargado");
+
+    } catch (e) {
+        console.error(e);
+    }
+};
+</script>
+
+</body>
+</html>

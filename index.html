@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollador de aplicaciones web</title>
+    <meta name="description" content="No solo escribo código; ilumino el camino técnico de tu negocio para que el proceso resulte más sencillo.">
+    
+    <link rel="icon" type="image/svg+xml" href="imagenes/flamy.svg">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cjrtnc.leaningtech.com/4.0/loader.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="imagenes/flamy.svg" alt="Logo Flamy" class="logo-img" width="59" height="150">
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+            aria-controls="nav-menu">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+            <a href="index.html" class="botonNavegacion">¿Quién soy?</a>
+            <a href="formularioContactanos.html" class="botonNavegacion">Contáctame</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero" aria-labelledby="nombre-heading">
+            <h1 id="nombre-heading">César Cuenca</h1>
+            <p class="subtitle">No solo escribo código; ilumino el camino técnico de
+                tu negocio para que el proceso resulte más sencillo.</p>
+
+            <div class="containerQuienSoy">
+                <div class="miFoto">
+                    <img src="imagenes\miFoto.jpg" alt="fotografia mia">
+                </div>
+                <div class="textoQuienSoy">
+                    <p>Hola gracias por visitar mi web. Soy Programador Java en formación con un fuerte compromiso y
+                        motivación para aplicar los conocimientos adquiridos en el
+                        desarrollo de software.</p>
+                </div>
+            </div>
+
+            <div class="mision">
+                <h2>Misión</h2>
+                <p>Diseñar interfaces digitales que combinan la eficiencia técnica con una
+                    estética limpia, proporcionando claridad y facilidad de uso a través de
+                    una jerarquía visual equilibrada.</p>
+            </div>
+
+            <div class="vision">
+                <h2>Visión</h2>
+                <p>Ser reconocida por crear entornos digitales que inspiran esperanza y calma,
+                    demostrando que la tecnología puede ser un espacio acogedor y profesional
+                    a la vez.</p>
+            </div>
+        </section>
+
+        <section id="trabajos" aria-labelledby="repo-heading">
+            <div class="github">
+                <h2 id="repo-heading">Ver Trabajos en GitHub</h2>
+                <div class="botonGitHub">
+                    <a target="_blank" href="https://github.com/cesarCuenca1993" aria-label="Ver mis repositorios en GitHub">
+                        <h2>GitHub</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="herramientas-heading">
+
+       
+<div class="herramientas">
+    <h2 class="tituloHerramientas">Lenguajes utilizados</h2>
+    <div class="cinta-wrapper">
+        <ul class="cinta-track">
+            <li class="cardHerramienta"><img src="imagenes/html.svg" alt="HTML5" title="HTML5 - Estructura web"></li>
+            <li class="cardHerramienta"><img src="imagenes/css.svg" alt="CSS3" title="CSS3 - Estilos y diseño"></li>
+            <li class="cardHerramienta"><img src="imagenes/java.svg" alt="Java" title="Java - Programación backend"></li>
+            <li class="cardHerramienta"><img src="imagenes/javascript.svg" alt="JavaScript" title="JavaScript - Interactividad web"></li>
+            <li class="cardHerramienta"><img src="imagenes/mysql.png" alt="MySQL" title="MySQL - Base de datos"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="herramientas">
+    <h2 class="tituloHerramientas">Herramientas utilizadas</h2>
+    <div class="cinta-wrapper">
+        <ul class="cinta-track">
+            <li class="cardHerramienta"><img src="imagenes/figma.svg" alt="Figma" title="Figma - Diseño UI/UX"></li>
+            <li class="cardHerramienta"><img src="imagenes/canva.svg" alt="Canva" title="Canva - Diseño gráfico"></li>
+            <li class="cardHerramienta"><img src="imagenes/affinity.svg" alt="Affinity" title="Affinity - Edición de imágenes"></li>
+            <li class="cardHerramienta"><img src="imagenes/intellij.svg" alt="IntelliJ" title="IntelliJ - IDE principal"></li>
+            <li class="cardHerramienta"><img src="imagenes/git.svg" alt="GitHub" title="GitHub - Control de versiones"></li>
+            <li class="cardHerramienta"><img src="imagenes/vscode.svg" alt="VsCode" title="VsCode - Editor de código"></li>
+            <li class="cardHerramienta"><img src="imagenes/mongo.svg" alt="Mongo" title="MongoDB - Base de datos NoSQL"></li>
+        </ul>
+    </div>
+</div>
+        </section>
+
+        <section aria-labelledby="juego-heading">
+            <div class="videoExplicacionJuego">
+                <h2 id="juego-heading">Explicación del juego</h2>
+                <video controls>
+                    <source src="video/highHopes.mp4#t=1" type="video/mp4">
+                    Tu navegador no soporta la reproducción de vídeo.
+                </video>
+            </div>
+            <div class="imagenJuego">
+                <h2>Juego</h2>
+
+                <div class="contenedor-slider">
+                    <img id="imagenVisible" src="capturaJuego/menu.png" alt="Portada menu juego">
+
+                    <button class="btn-slider prev" onclick="cambiarImagen(-1)">&#10094;</button>
+                    <button class="btn-slider next" onclick="cambiarImagen(1)">&#10095;</button>
+                </div>
+
+                <p>Este juego ha sido jugado más de 1.000 veces y tiene las mejores reseñas.</p>
+            </div>
+
+            <div class="juego">
+                <div class="jugar">
+                    <a href="jugar.html" target="_blank" rel="noopener noreferrer" aria-label="Jugar al juego en línea">
+                        <h2>Jugar</h2>
+                    </a>
+                </div>
+                <div class="descargar">
+                    <a href="https://github.com/cesarCuenca1993/Sociedad-de-Almas/archive/refs/tags/v1.0.zip"
+                        aria-label="Descargar el juego">
+                        <h2>Descargar</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CORRECCIÓN: role="contentinfo" implícito en <footer> semántico -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <a href="formularioContactanos.html" class="botonNavegacion">contactame:</a>
+
+            <div class="footer-brand">
+
+                <p>#613246097</p>
+                <p>ccuencap2526@politecnics.barcelona</p>
+            </div>
+
+            <div class="footer-socials">
+                <p>Redes sociales</p>
+
+                <div class="social-icons">
+                    <a href="">
+                        <img src="imagenes/facebook.svg" alt=" logo facebook">
+                    </a>
+
+                    <a href="">
+                        <img src="imagenes/instagram.svg" alt="logo instagram">
+                    </a>
+
+                    <a href="">
+                        <img src="imagenes/twiter.svg" alt="logo twiter">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="final">
+            <p><small>Hecho con calidez por Flamy &copy; 2026</small></p>
+        </div>
+    </footer>
+
+    <script src="animacionJavaScript.js"></script>
+</body>
+
+</html>
