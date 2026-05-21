@@ -17,9 +17,20 @@
 }
 
 @keyframes flamaViva {
-    0%   { transform: scale(1);    filter: brightness(1);   }
-    50%  { transform: scale(1.15); filter: brightness(1.3); }
-    100% { transform: scale(1);    filter: brightness(1);   }
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+        filter: brightness(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
 }
 
 .logo-img {
@@ -239,7 +250,7 @@ body {
 .botonGitHub {
     margin: 10px 60px 20px;
     padding: 10px;
- 
+
     background-color: #3a5f77;
     border-radius: 10px;
     display: flex;
@@ -324,8 +335,13 @@ body {
 }
 
 @keyframes cinta-scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .cardHerramienta {
@@ -375,17 +391,17 @@ body {
     display: block;
 }
 
-/* Contenedores generales de tarjetas */
+
 .imagenJuego {
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     margin-bottom: 30px;
-    overflow: hidden; /* Asegura que nada sobresalga de las esquinas redondeadas */
+    overflow: hidden;
 }
 
-.imagenJuego h2  {
-    padding: 10px 20px; /* Añadido un poco más de padding lateral */
+.imagenJuego h2 {
+    padding: 10px 20px;
     margin-top: 10px;
     color: #1a1a1a;
     font-family: 'Quicksand', sans-serif;
@@ -400,52 +416,58 @@ body {
     line-height: 1.7;
 }
 
-/* CORRECCIÓN DE IMÁGENES: Tamaño uniforme */
+
 .imagenJuego img {
     display: block;
     width: 100%;
-    height: 250px; /* Altura fija para que no afecte al footer */
-    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
-    padding: 0 10px; /* Mantiene el espacio que tenías */
-    box-sizing: border-box; /* Asegura que el padding no rompa el ancho del 100% */
+    height: 250px;
+    object-fit: cover;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-/* Slider corregido */
+
 .contenedor-slider {
     position: relative;
     width: 100%;
-    max-width: 500px; 
-    height: 300px; /* Altura fija para el slider */
+    max-width: 500px;
+    height: 300px;
     margin: auto;
     overflow: hidden;
 }
 
 .contenedor-slider img {
     width: 100%;
-    height: 100%; /* Ocupa el 100% de la altura del contenedor-slider */
-    object-fit: cover; 
+    height: 100%;
     display: block;
     border-radius: 8px;
 }
 
-/* Botones del slider */
+
 .btn-slider {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 10; /* Asegura que estén por encima de la imagen */
+    z-index: 10;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+    left: 10px;
+}
 
-.btn-slider:hover { background-color: rgba(0,0,0,0.8); }
+.next {
+    right: 10px;
+}
+
+.btn-slider:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 .juego {
@@ -463,7 +485,7 @@ body {
     width: 130px;
     border: none;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-    min-height: 44px;
+    min-height: 44px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,15 +510,58 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-
-.jugar a h2,
-.descargar a h2 {
+    height: 100%; 
     color: #F0ECEC;
     font-family: 'Josefin Slab', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
-    margin: 0;
 }
+
+.identidad-manual {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.identidad-manual h2 {
+    color: #1a1a1a;
+    font-family: 'Quicksand';
+    padding-left: 10px;
+}
+
+.identidad-manual p {
+    color: #1a1a1a;
+    font-family: 'Josefin Sans';
+    padding-left: 10px;
+}
+
+.manual {
+    background-color: #3a5f77;
+    margin: 10px; 
+    padding: 10px;
+    width: 140px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.manual a {
+    display: block; 
+    font-family: 'Josefin Slabs';
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color: #F0ECEC;
+    text-decoration: none;
+}
+
+
+.manual:hover {
+    background-color: #2c495c;
+    transition: background-color 0.3s ease;
+}
+
 #juego-overlay {
     display: none;
     position: fixed;
@@ -534,7 +599,8 @@ body {
     height: 600px;
     transform-origin: center center;
 }
-/* FORMULARIO DE CONTACTO */ 
+
+/* FORMULARIO DE CONTACTO */
 
 .contactoPrincipalContenedor {
     border: 1px solid #c0b9b9;
@@ -749,42 +815,37 @@ body {
     margin-top: 12px;
     font-size: 0.9rem;
 }
+
 @media (min-width: 769px) {
 
-    /* ==========================================================================
-       ADAPTACIÓN DEL FOOTER PARA ESCRITORIO (PC) - TU HTML EXACTO
-       ========================================================================== */
-    
+    /* FOOTER PARA ESCRITORIO (PC)  */
+
     .main-footer {
         padding-right: 40px;
-        padding-left: 40px;/* Espaciado elegante para pantallas grandes */
+        padding-left: 40px;
         margin-top: 50px;
 
     }
 
-    /* Creamos una cuadrícula de 2 columnas (Izquierda para contacto, Derecha para redes) */
     .footer-content {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-      padding: 5px;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
         max-width: 1100px;
-        margin: 0 auto;/* Centra el bloque en pantallas muy anchas */
+        margin: 0 auto;
         align-items: start;
 
     }
 
-    /* --- COLUMNA IZQUIERDA (Contacto) --- */
-    
-    /* Forzamos al botón a quedarse en la columna 1 */
     .main-footer .botonNavegacion {
         grid-column: 1;
-        margin-left: 0; /* Resetea el margen que venía del header móvil */
+        margin-left: 0;
+     
         text-align: left;
         display: block;
-        
+
     }
 
-    /* Forzamos a la marca a quedarse abajo del botón en la columna 1 */
     .footer-brand {
         grid-column: 1;
         text-align: left;
@@ -795,15 +856,12 @@ body {
         padding-bottom: 4px;
     }
 
-    /* --- COLUMNA DERECHA (Redes Sociales) --- */
-    
-    /* Ubicamos las redes en la columna 2 expandiéndose verticalmente */
     .footer-socials {
         grid-column: 2;
-        grid-row: 1 / span 2; 
+        grid-row: 1 / span 2;
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Alinea los textos e iconos al extremo derecho */
+        align-items: flex-end;
         text-align: right;
     }
 
@@ -812,7 +870,6 @@ body {
         margin-bottom: 12px;
     }
 
-    /* Alineación horizontal de los iconos en PC */
     .social-icons {
         display: flex;
         justify-content: flex-end;
@@ -820,14 +877,11 @@ body {
         margin: 0;
     }
 
-    /* --- BLOQUE FINAL (Créditos de autoría) --- */
-    
     .final {
         margin-top: 35px;
-       
-        border-top: 1px solid rgba(224, 217, 212, 0.15); /* Línea sutil divisoria */
+        border-top: 1px solid rgba(224, 217, 212, 0.15);
         padding-top: 5px;
-        text-align: right; /* Alineado a la derecha en armonía con las redes */
+        text-align: right;
         max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
