@@ -59,13 +59,28 @@ body {
     border-radius: 3px;
 }
 
+
 .main-header {
     background-color: #2D241E;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    position: relative;
+    position: sticky;   
+    top: 0;            
+    z-index: 1000;     
+}
+
+.header-title {
+    position: absolute;   
+    left: 50%;
+    transform: translateX(-50%);  
+    color: #F0ECEC;
+    font-family: 'Josefine Slabs';
+  
+    margin: 0;
+    white-space: nowrap;  
+    pointer-events: none; 
 }
 
 .logo {
@@ -215,7 +230,7 @@ body {
 
 .mision h2,
 .vision h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slabs';
     color: #1a1a1a;
     padding: 10px 14px;
     background-color: rgba(0, 0, 0, 0.04);
@@ -225,7 +240,7 @@ body {
 .mision p,
 .vision p {
     color: #1a1a1a;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans';
     text-align: left;
     margin-bottom: 15px;
     padding: 12px 14px;
@@ -241,7 +256,7 @@ body {
 
 .github h2 {
     margin-top: 10px;
-    font-family: 'Quicksand';
+    font-family: 'Josefin Slabs';
     color: #1a1a1a;
     text-align: center;
     padding: 5px;
@@ -250,7 +265,6 @@ body {
 .botonGitHub {
     margin: 10px 60px 20px;
     padding: 10px;
-
     background-color: #3a5f77;
     border-radius: 10px;
     display: flex;
@@ -275,17 +289,12 @@ body {
 
 .botonGitHub a h2 {
     color: #F0ECEC;
-    font-family: 'Quicksand';
+    font-family: 'Josefine Slabs';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
 
-
-
-/* ==========================================================================
-   2. TUS ESTILOS ORIGINALES REVISADOS
-   ========================================================================== */
 .herramientas {
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -310,7 +319,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     color: #1a1a1a;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Slabs';
 }
 
 .cinta-wrapper {
@@ -382,7 +391,7 @@ body {
     padding: 10px;
     margin-top: 10px;
     color: #1a1a1a;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Slabs';
 }
 
 .videoExplicacionJuego video {
@@ -404,7 +413,7 @@ body {
     padding: 10px 20px;
     margin-top: 10px;
     color: #1a1a1a;
-    font-family: 'Quicksand', sans-serif;
+   font-family: 'Josefin Slabs';
 }
 
 .imagenJuego p {
@@ -512,7 +521,7 @@ body {
     width: 100%;
     height: 100%; 
     color: #F0ECEC;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slabs';
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -527,7 +536,7 @@ body {
 
 .identidad-manual h2 {
     color: #1a1a1a;
-    font-family: 'Quicksand';
+font-family: 'Josefin Slabs';
     padding-left: 10px;
 }
 
@@ -554,6 +563,7 @@ body {
     font-weight: bold; 
     color: #F0ECEC;
     text-decoration: none;
+    
 }
 
 
@@ -619,7 +629,7 @@ body {
 
 .contacto-info h1 {
     color: #1a1a1a;
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Josefin Slabs';
     margin: 10px 0;
     font-size: 1.8rem;
 }
@@ -640,7 +650,7 @@ body {
 .nombre label {
     margin: 8px 0 4px;
     color: #1a1a1a;
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Slabs';
     font-size: 1rem;
     font-weight: 600;
 }
@@ -673,7 +683,7 @@ body {
 .mensaje label {
     color: #1a1a1a;
     font-size: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slabs';
     margin: 8px 0 4px;
     font-weight: 600;
 }
@@ -745,7 +755,7 @@ body {
 
 .enviar h2 {
     padding: 10px 30px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefine Slabs';
     color: #F0ECEC;
     font-size: 1.1rem;
 }
