@@ -16,22 +16,22 @@
 
 <body>
     <header class="main-header">
-    <div class="logo">
-        <img src="imagenes/flamy.svg" alt="Logo Flamy" class="logo-img" width="59" height="150">
-    </div>
+        <div class="logo">
+            <img src="imagenes/flamy.svg" alt="Logo Flamy" class="logo-img" width="59" height="150">
+        </div>
 
-    <h2 class="header-title">César Cuenca</h2>
+        <h2 class="header-title">César Cuenca</h2>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
-        aria-controls="nav-menu">
-        ☰
-    </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+            aria-controls="nav-menu">
+            ☰
+        </button>
 
-    <nav class="nav" id="nav-menu" aria-label="Navegación principal">
-        <a href="index.html" class="botonNavegacion">¿Quién soy?</a>
-        <a href="formularioContactanos.html" class="botonNavegacion">Contáctame</a>
-    </nav>
-</header>
+        <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+            <a href="index.html" class="botonNavegacion">¿Quién soy?</a>
+            <a href="formularioContactanos.html" class="botonNavegacion">Contáctame</a>
+        </nav>
+    </header>
 
     <main class="container">
 
@@ -42,7 +42,7 @@
 
             <div class="containerQuienSoy">
                 <div class="miFoto">
-                    <img src="imagenes\miFoto.jpg" alt="fotografia mia">
+                    <img src="imagenes/miFoto.jpg" alt="fotografia de César Cuenca">
                 </div>
                 <div class="textoQuienSoy">
                     <p>Hola, gracias por visitar mi web. Soy estudiante Diseño de aplicaciones Web,
@@ -124,9 +124,9 @@
 
         <section aria-labelledby="juego-heading">
             <div class="videoExplicacionJuego">
-                <h2 id="juego-heading">Explicación del juego</h2>
+                <h2 id="juego-heading">Explicación de la Landing page y el juego 2D</h2>
                 <video controls>
-                    <source src="video/highHopes.mp4#t=1" type="video/mp4">
+                    <source src="video/webFree.mp4#t=1" type="video/mp4">
                     Tu navegador no soporta la reproducción de vídeo.
                 </video>
             </div>
@@ -136,11 +136,14 @@
                 <div class="contenedor-slider">
                     <img id="imagenVisible" src="capturaJuego/menu.png" alt="Portada menu juego">
 
-                    <button class="btn-slider prev" onclick="cambiarImagen(-1)">&#10094;</button>
-                    <button class="btn-slider next" onclick="cambiarImagen(1)">&#10095;</button>
+                    <button class="btn-slider prev" onclick="cambiarImagen(-1)"
+                        aria-label="Imagen anterior">&#10094;</button>
+                    <button class="btn-slider next" onclick="cambiarImagen(1)"
+                        aria-label="Siguiente imagen">&#10095;</button>
                 </div>
 
-                <p>Este juego ha sido jugado más de 1.000 veces y tiene las mejores reseñas.</p>
+                <p>¿Listo para el reto? Más de 1.000 jugadores ya han entrado a la arena con las mejores críticas. ¡Que
+                    no te lo cuenten, vívelo tú mismo!</p>
             </div>
 
             <div class="juego">
@@ -189,11 +192,11 @@
                 <p>Redes sociales</p>
 
                 <div class="social-icons">
-                    <a href="">
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank">
                         <img src="imagenes/facebook.svg" alt=" logo facebook">
                     </a>
 
-                    <a href="">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <img src="imagenes/instagram.svg" alt="logo instagram">
                     </a>
 
